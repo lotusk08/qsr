@@ -1,15 +1,15 @@
 version: '3.8'
 
 volumes:
-  lottery_log:
+  qsr_log:
 services:
-  lottery:
-    container_name: lottery
+  qsr:
+    container_name: qsr
     expose:
       - 28458
     ports:
       - "28458:8888"
     volumes:
-      - "lottery_log:/var/log"
+      - "qsr_log:/var/log"
     image: "lotusk08/lottery:v0.3"
     restart: always

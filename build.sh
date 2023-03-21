@@ -1,6 +1,6 @@
 TAG=${1:-latest}
 
-rm -f lottery.tar.gz
-tar -czvf lottery.tar.gz ../QSR/
-docker build -t QSR:$TAG  -f ./Dockerfile .
+rm -f qsr.tar.gz
+tar -czvf qsr.tar.gz ../qsr/
+docker build -t qsr:$TAG  -f ./Dockerfile .
 
