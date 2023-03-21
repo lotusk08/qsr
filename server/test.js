@@ -31,4 +31,4 @@ if (repeat.length > 0) {
   console.log(repeat);
   return;
 }
-console.log("没有重复选项");
+console.log("Không có tùy chọn lặp đi lặp lại");
